@@ -1,0 +1,130 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(145deg, #ff5722, #ffc107);
+  color: #212121;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2),
+    -8px -8px 15px rgba(255, 255, 255, 0.9);
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+  color: #ff5722;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #4caf50;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  transition: border-color 0.3s ease;
+}
+
+#taskInput:focus {
+  border-color: #388e3c;
+  outline: none;
+}
+
+#addTaskBtn {
+  background-color: #ff5722; /* Deep Orange */
+  color: rgb(198, 5, 5);
+  border: none;
+  padding: 10px 20px;
+  margin-left: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#addTaskBtn:hover {
+  background-color: #e64a19; /* Darker Orange */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 15px; /* Increased padding for card-like appearance */
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.9); /* Card background */
+  border-radius: 12px; /* Rounded corners for cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+li:hover {
+  background-color: #fafafa;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.task-text {
+  flex: 1;
+  padding: 0 10px;
+}
+
+.remove-btn,
+.complete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.remove-btn {
+  color: #e64a19;
+}
+
+.remove-btn:hover {
+  background-color: #fbe9e7;
+  transform: scale(0.95);
+}
+
+.complete-btn {
+  color: #4caf50;
+  margin-left: 10px;
+}
+
+.complete-btn:hover {
+  background-color: #c8e6c9;
+  transform: scale(0.95);
+}
+
+.status {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#taskCount {
+  font-size: 18px;
+  color: #212121;
+}
